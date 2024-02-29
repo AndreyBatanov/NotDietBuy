@@ -1,0 +1,47 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  span {
+    display: block;
+    font-weight: 700;
+  }
+  &__inner {
+    display: flex;
+    gap: 550px;
+  }
+  &__logo {
+    position: relative;
+    &-text {
+      font-size: 18px;
+      line-height: 28px;
+      color: $wihte;
+      padding-top: 24px;
+      width: 265px;
+    }
+
+    &-right {
+      position: absolute;
+      width: 195px;
+      transform: rotate(340deg);
+      top: 25px;
+      left: 138px;
+    }
+    &-left {
+      padding-top: 19px;
+      align-self: center;
+      width: 175px;
+    }
+  }
+}
+.header__order {
+  background-color: $bg-order;
+  padding: 29px 0px 49px;
+  &-logo {
+    width: 178px;
+    height: 74px;
+    margin-left: 40px;
+  }
+}

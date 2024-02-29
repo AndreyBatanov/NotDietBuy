@@ -1,0 +1,19 @@
+.footer {
+  background-color: $mercury;
+  padding: 25px 0 25px;
+  &__inner {
+    display: flex;
+    gap: 200px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: $gray;
+    &-tex {
+      gap: 10px;
+    }
+  }
+}

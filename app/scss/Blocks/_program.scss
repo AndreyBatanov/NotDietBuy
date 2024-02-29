@@ -1,0 +1,49 @@
+.program {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $mercury;
+  &__title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 65px;
+    text-align: center;
+    color: $black;
+    margin-bottom: 35px;
+    span {
+      color: $tenn;
+    }
+  }
+  &__inner {
+    width: 100%;
+    margin: 0 auto 67px;
+    border-top: 1px solid $tenn;
+  }
+  &__box {
+    display: grid;
+    min-height: 120px;
+    border-bottom: 1px solid $tenn;
+    align-items: center;
+    padding: 22px 0;
+  }
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 26px;
+    line-height: 40px;
+    gap: 40px;
+    &-title {
+      width: 33%;
+      font-weight: 600;
+    }
+    &-descr {
+      width: 50%;
+      font-weight: 400;
+    }
+  }
+  &__btn {
+    margin: 0 auto;
+    max-width: 200px;
+    height: 55px;
+  }
+}

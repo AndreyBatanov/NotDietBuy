@@ -1,0 +1,125 @@
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: $bg-opas;
+  top: 0;
+  z-index: 15;
+}
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 380px;
+  // min-height: 400px;
+  background-color: $mercury;
+  padding: 40px;
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -45px;
+    font-size: 54px;
+    line-height: 24px;
+    color: $tenn;
+    cursor: pointer;
+  }
+  &__order {
+    max-width: 400px;
+    width: 100%;
+    &-close {
+      position: absolute;
+      top: 0;
+      right: -45px;
+      font-size: 54px;
+      line-height: 24px;
+      color: $tenn;
+      cursor: pointer;
+    }
+  }
+  &__title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    span {
+      color: $tenn;
+    }
+  }
+  &__content {
+    width: 100%;
+    background-color: $mercury;
+    border: 1px solid $tenn;
+    color: $black;
+    padding: 20px;
+    margin-bottom: 10px;
+    &-title {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    &-text {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    &-price {
+      font-size: 18px;
+      font-weight: 500;
+      span {
+        font-weight: 900;
+        color: $tenn;
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    &-descr {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    &-btn {
+      width: 100%;
+    }
+  }
+  .error {
+    border: 1px solid $tenn;
+  }
+  label.error {
+    border: none;
+    text-align: left;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: $tenn;
+  }
+}
+.sbp {
+  text-align: center;
+  &__inner {
+    margin: 40px 0;
+    border: 2px solid $tenn;
+    padding: 15px;
+  }
+  &__title {
+    font-size: 20px;
+    color: $blue;
+    margin-bottom: 15px;
+  }
+  &__number {
+    color: $tenn;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  &__name {
+    font-size: 20px;
+    font-weight: 500;
+    color: $bg-opas;
+  }
+}
+#order,
+#consultation {
+  display: none;
+}
