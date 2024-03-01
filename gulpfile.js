@@ -67,6 +67,7 @@ function build() {
     [
       "app/css/style.min.css",
       "app/fonts/**/*",
+      "app/mailer/**/*",
       "app/js/main.min.js",
       "app/*.html",
     ],
