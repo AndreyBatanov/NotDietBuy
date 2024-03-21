@@ -66,7 +66,7 @@ $(function () {
     }).done(function () {
       $(this).find("input").val("");
       $(".overlay, #consultation").fadeOut();
-      $((window.location = "https://buycourse.notdiet.ru/order.html")).fadeIn();
+      $((window.location = "https://notdiet.ru/order.html")).fadeIn();
 
       $("form").trigger("reset");
     });
